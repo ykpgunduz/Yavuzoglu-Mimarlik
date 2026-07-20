@@ -6,7 +6,24 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
-  description: `${company.name} — ${company.about.story.slice(0, 160)}`,
+  description:
+    "Yavuzoğlu Mimarlık hakkında. İstanbul Beşiktaş'ta bağlama duyarlı, yaşanabilir mekanlar tasarlayan mimarlık ofisimizin hikayesi, felsefesi ve çalışma prensipleri.",
+  openGraph: {
+    title: "Hakkımızda | Yavuzoğlu Mimarlık",
+    description:
+      "İstanbul Beşiktaş'ta bağlama duyarlı, yaşanabilir mekanlar tasarlayan mimarlık ofisimizin hikayesi ve felsefesi.",
+    images: ["/images/headers/hakkimizda-desktop.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hakkımızda | Yavuzoğlu Mimarlık",
+    description:
+      "İstanbul Beşiktaş'ta bağlama duyarlı, yaşanabilir mekanlar tasarlayan mimarlık ofisimizin hikayesi ve felsefesi.",
+    images: ["/images/headers/hakkimizda-desktop.jpg"],
+  },
+  alternates: {
+    canonical: "https://yavuzoglumimarlik.com/hakkimizda",
+  },
 };
 
 export default function HakkimizdaPage() {

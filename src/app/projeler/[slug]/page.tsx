@@ -22,6 +22,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: project.title,
     description: project.shortDescription,
+    openGraph: {
+      title: `${project.title} | Yavuzoğlu Mimarlık`,
+      description: project.shortDescription,
+      type: "article",
+      images: [
+        {
+          url: project.images.banner,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Yavuzoğlu Mimarlık`,
+      description: project.shortDescription,
+      images: [project.images.banner],
+    },
+    alternates: {
+      canonical: `https://yavuzoglumimarlik.com/projeler/${slug}`,
+    },
   };
 }
 

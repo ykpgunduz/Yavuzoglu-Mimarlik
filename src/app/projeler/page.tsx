@@ -8,7 +8,23 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Projeler",
   description:
-    "Yavuzoğlu Mimarlık tarafından tasarlanan konut, ticari ve kültürel mimari projeleri keşfedin.",
+    "Yavuzoğlu Mimarlık tarafından tasarlanan konut, ticari ve kültürel mimari projeleri keşfedin. İstanbul'da gerçekleştirilen modern mimari çalışmalar.",
+  openGraph: {
+    title: "Projeler | Yavuzoğlu Mimarlık",
+    description:
+      "Konut, ticari ve kültürel alanlarda gerçekleştirdiğimiz mimari projeleri keşfedin.",
+    images: ["/images/headers/projeler-desktop.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projeler | Yavuzoğlu Mimarlık",
+    description:
+      "Konut, ticari ve kültürel alanlarda gerçekleştirdiğimiz mimari projeleri keşfedin.",
+    images: ["/images/headers/projeler-desktop.jpg"],
+  },
+  alternates: {
+    canonical: "https://yavuzoglumimarlik.com/projeler",
+  },
 };
 
 export default function ProjelerPage() {
