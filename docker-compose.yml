@@ -1,0 +1,11 @@
+services:
+  yavuzoglu-mimarlik:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yavuzoglu-mimarlik-web
+    ports:
+      - "9063:3000"
+    restart: always
+    environment:
+      - NODE_ENV=production
