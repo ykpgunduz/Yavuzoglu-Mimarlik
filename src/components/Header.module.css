@@ -5,7 +5,9 @@
   right: 0;
   z-index: var(--z-header);
   padding: 1.25rem 0;
-  transition: all var(--transition-base);
+  transition: padding var(--transition-base),
+    background-color var(--transition-base),
+    box-shadow var(--transition-base);
   background-color: transparent;
 }
 
@@ -222,13 +224,17 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
+  pointer-events: none;
   visibility: hidden;
-  transition: opacity var(--transition-base), visibility var(--transition-base);
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  will-change: opacity;
 }
 
 .mobileMenu.mobileOpen {
   opacity: 1;
+  pointer-events: auto;
   visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
 }
 
 .mobileNav {
@@ -246,13 +252,14 @@
 
 .mobileNavItem {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity var(--transition-base), transform var(--transition-base);
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition-delay: 0s;
 }
 
 .mobileOpen .mobileNavItem {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .mobileNavLink {

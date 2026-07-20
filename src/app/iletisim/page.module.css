@@ -11,19 +11,12 @@
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  background-image: url("/images/headers/iletisim-desktop.png");
-  background-size: cover;
-  background-position: center;
 }
 
-@media (max-width: 768px) {
-  .pageHeader {
-    background-image: url("/images/headers/iletisim.png");
-  }
-}
-
-.headerBg {
-  display: none;
+.headerBgImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .headerOverlay {

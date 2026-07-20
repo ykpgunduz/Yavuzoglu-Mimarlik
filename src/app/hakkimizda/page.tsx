@@ -14,6 +14,15 @@ export default function HakkimizdaPage() {
     <>
       {/* ===== PAGE HEADER ===== */}
       <section className={styles.pageHeader}>
+        <Image
+          src="/images/headers/hakkimizda-desktop.jpg"
+          alt="Hakkımızda"
+          fill
+          priority
+          className={styles.headerBgImage}
+          sizes="100vw"
+          quality={80}
+        />
         <div className={styles.headerOverlay} />
         <div className="container">
           <div className={styles.headerContent}>

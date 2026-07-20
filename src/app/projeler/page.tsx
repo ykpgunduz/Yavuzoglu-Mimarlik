@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -15,6 +16,15 @@ export default function ProjelerPage() {
     <>
       {/* ===== PAGE HEADER ===== */}
       <section className={styles.pageHeader}>
+        <Image
+          src="/images/headers/projeler-desktop.jpg"
+          alt="Projeler"
+          fill
+          priority
+          className={styles.headerBgImage}
+          sizes="100vw"
+          quality={80}
+        />
         <div className={styles.headerOverlay} />
         <div className="container">
           <div className={styles.headerContent}>

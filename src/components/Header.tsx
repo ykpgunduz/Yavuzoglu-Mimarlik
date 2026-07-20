@@ -31,12 +31,11 @@ export default function Header() {
   }, [pathname]);
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    const raf = requestAnimationFrame(() => {
+      document.body.style.overflow = menuOpen ? "hidden" : "";
+    });
     return () => {
+      cancelAnimationFrame(raf);
       document.body.style.overflow = "";
     };
   }, [menuOpen]);

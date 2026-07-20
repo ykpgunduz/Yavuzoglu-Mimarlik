@@ -19,6 +19,15 @@ export default function IletisimPage() {
     <>
       {/* ===== PAGE HEADER ===== */}
       <section className={styles.pageHeader}>
+        <Image
+          src="/images/headers/iletisim-desktop.jpg"
+          alt="İletişim"
+          fill
+          priority
+          className={styles.headerBgImage}
+          sizes="100vw"
+          quality={80}
+        />
         <div className={styles.headerOverlay} />
         <div className="container">
           <div className={styles.headerContent}>
@@ -82,24 +91,7 @@ export default function IletisimPage() {
                   </p>
                 </div>
 
-                <div className={styles.socialLinks}>
-                  <a
-                    href={company.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.socialLink}
-                  >
-                    Instagram ↗
-                  </a>
-                  <a
-                    href={company.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.socialLink}
-                  >
-                    LinkedIn ↗
-                  </a>
-                </div>
+
               </div>
             </ScrollReveal>
 
