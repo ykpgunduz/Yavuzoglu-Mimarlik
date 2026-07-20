@@ -47,59 +47,61 @@ export default function Header() {
   const useWhiteLogo = isDarkHero && !scrolled;
 
   return (
-    <header
-      className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${
-        isDarkHero ? styles.darkHero : ""
-      }`}
-      role="banner"
-    >
-      <div className={styles.inner}>
-        <Link href="/" className={styles.logo} aria-label="Ana sayfaya dön">
-          <Image
-            src={useWhiteLogo ? "/images/logo-beyaz.png" : "/images/logo-siyah.png"}
-            alt="Yavuzoğlu Mimarlık"
-            width={36}
-            height={36}
-            className={styles.logoMark}
-            priority
-          />
-          <span className={styles.logoText}>
-            YAVUZOĞLU
-            <span className={styles.logoSub}>MİMARLIK</span>
-          </span>
-        </Link>
+    <>
+      <header
+        className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${
+          isDarkHero ? styles.darkHero : ""
+        }`}
+        role="banner"
+      >
+        <div className={styles.inner}>
+          <Link href="/" className={styles.logo} aria-label="Ana sayfaya dön">
+            <Image
+              src={useWhiteLogo ? "/images/logo-beyaz.png" : "/images/logo-siyah.png"}
+              alt="Yavuzoğlu Mimarlık"
+              width={36}
+              height={36}
+              className={styles.logoMark}
+              priority
+            />
+            <span className={styles.logoText}>
+              YAVUZOĞLU
+              <span className={styles.logoSub}>MİMARLIK</span>
+            </span>
+          </Link>
 
-        <nav className={styles.nav} role="navigation" aria-label="Ana navigasyon">
-          <ul className={styles.navList}>
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`${styles.navLink} ${
-                    pathname === link.href ? styles.active : ""
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+          <nav className={styles.nav} role="navigation" aria-label="Ana navigasyon">
+            <ul className={styles.navList}>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`${styles.navLink} ${
+                      pathname === link.href ? styles.active : ""
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-        <button
-          className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-menu"
-          aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
-        >
-          <span className={styles.hamburgerLine} />
-          <span className={styles.hamburgerLine} />
-          <span className={styles.hamburgerLine} />
-        </button>
-      </div>
+          <button
+            className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
+          >
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+          </button>
+        </div>
+      </header>
 
-      {/* Mobil Menü */}
+      {/* Mobil Menü — header dışında, backdrop-filter containing block sorununu önler */}
       <div
         id="mobile-menu"
         className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ""}`}
@@ -129,6 +131,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-    </header>
+    </>
   );
 }
