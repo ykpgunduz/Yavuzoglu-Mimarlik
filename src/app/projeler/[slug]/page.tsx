@@ -135,6 +135,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     src={imgSrc}
                     alt={`${project.title} - Görsel ${i + 1}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className={styles.galleryImg}
                   />
                 </div>

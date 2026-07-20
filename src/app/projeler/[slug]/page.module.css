@@ -66,13 +66,18 @@
 /* ===== HERO GÖRSEL ===== */
 .heroImage {
   width: 100%;
+  padding: 0 var(--space-lg);
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .heroPlaceholder {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 21 / 9;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .heroImg {
@@ -145,13 +150,21 @@
 .galleryGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .galleryItem {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.galleryItem:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+  transform: translateY(-3px);
 }
 
 .galleryImg {
@@ -160,7 +173,7 @@
 }
 
 .galleryItem:hover .galleryImg {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 /* ===== PROJE NAVİGASYONU ===== */
@@ -214,8 +227,13 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .heroImage {
+    padding: 0 var(--space-md);
+  }
+
   .heroPlaceholder {
     aspect-ratio: 16 / 9;
+    border-radius: 8px;
   }
 
   .contentGrid {
