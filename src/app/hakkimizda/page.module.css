@@ -1,0 +1,257 @@
+/* ===================================================
+   HAKKIMIZDA SAYFA STİLLERİ
+   =================================================== */
+
+/* ===== PAGE HEADER ===== */
+.pageHeader {
+  position: relative;
+  padding-top: calc(var(--space-4xl) + 3rem);
+  padding-bottom: var(--space-3xl);
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-image: url("/images/headers/hakkimizda-desktop.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    background-image: url("/images/headers/hakkimizda.png");
+  }
+}
+
+.headerBg {
+  display: none;
+}
+
+.headerOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0.3) 0%,
+    rgba(26, 26, 26, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.pageLabel {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: var(--space-md);
+}
+
+.pageTitle {
+  font-size: var(--text-page-title);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  color: var(--color-white);
+}
+
+.titleAccent {
+  color: var(--color-accent-light);
+}
+
+/* ===== SECTION SHARED ===== */
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.labelText {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.sectionHeader {
+  margin-bottom: var(--space-2xl);
+}
+
+.sectionTitle {
+  font-size: var(--text-section-title);
+  font-weight: 500;
+  max-width: 600px;
+}
+
+/* ===== HİKAYE ===== */
+.story {
+  background-color: var(--color-white);
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.storyTitle {
+  font-size: var(--text-section-title);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  max-width: 420px;
+}
+
+.storyRight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.storyText {
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  max-width: 100%;
+}
+
+/* ===== KURUCU ===== */
+.founder {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-bg);
+}
+
+.founderGrid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.founderImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-border-light);
+  overflow: hidden;
+}
+
+.founderPhoto {
+  object-fit: cover;
+  object-position: center;
+}
+
+.founderContent {
+  max-width: 520px;
+}
+
+.founderName {
+  font-size: var(--text-page-title);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.founderRole {
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-lg);
+  max-width: 100%;
+}
+
+.founderBio {
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  max-width: 100%;
+}
+
+/* ===== PRENSİPLER ===== */
+.principlesSection {
+  background-color: var(--color-white);
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.principleCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) var(--space-lg);
+  border: 1px solid var(--color-border-light);
+  height: 100%;
+  transition: border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.principleCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.principleNumber {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.principleTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.principleDescription {
+  font-size: var(--text-small);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  max-width: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .founderGrid {
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .founderGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .founderPlaceholder {
+    max-width: 280px;
+    aspect-ratio: 1;
+  }
+
+  .principlesGrid {
+    grid-template-columns: 1fr;
+  }
+}
