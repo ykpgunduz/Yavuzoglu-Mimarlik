@@ -157,7 +157,7 @@
   gap: 0.4em;
   font-size: 0.65rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   letter-spacing: 0.25em;
   margin-top: 0.2rem;
   padding-right: 0.25em;
@@ -182,7 +182,7 @@
 .address {
   font-family: var(--font-body);
   font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.6);
   line-height: var(--leading-normal);
 }
 
@@ -271,7 +271,7 @@
 
 .copyright {
   font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .credit {
@@ -280,8 +280,9 @@
 }
 
 .creditLink {
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: color var(--transition-fast);
 }
 

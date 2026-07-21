@@ -53,7 +53,7 @@ export default function Footer() {
 
             {/* İletişim */}
             <div className={styles.column}>
-              <h4 className={styles.columnTitle}>İletişim</h4>
+              <h3 className={styles.columnTitle}>İletişim</h3>
               <ul className={styles.columnList}>
                 <li>
                   <a
@@ -76,7 +76,7 @@ export default function Footer() {
 
             {/* Çalışma Saatleri */}
             <div className={styles.column}>
-              <h4 className={styles.columnTitle}>Çalışma Saatleri</h4>
+              <h3 className={styles.columnTitle}>Çalışma Saatleri</h3>
               <ul className={styles.columnList}>
                 <li className={styles.hoursItem}>{company.workingHours.weekdays}</li>
                 <li className={styles.hoursItem}>{company.workingHours.saturday}</li>

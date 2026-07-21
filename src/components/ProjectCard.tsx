@@ -20,7 +20,8 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           src={project.images.main}
           alt={project.title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          quality={75}
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 50vw, 400px"
           className={styles.image}
         />
         <div className={styles.overlay}>

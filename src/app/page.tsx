@@ -50,6 +50,8 @@ export default function HomePage() {
                 alt="Modern mimari beton cephe detayı"
                 fill
                 priority
+                fetchPriority="high"
+                quality={80}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className={styles.heroImage}
               />
@@ -121,7 +123,7 @@ export default function HomePage() {
                 <div className={styles.principles}>
                   {company.about.principles.map((p) => (
                     <div key={p.title} className={styles.principle}>
-                      <h4 className={styles.principleTitle}>{p.title}</h4>
+                      <h3 className={styles.principleTitle}>{p.title}</h3>
                       <p className={styles.principleDesc}>{p.description}</p>
                     </div>
                   ))}
