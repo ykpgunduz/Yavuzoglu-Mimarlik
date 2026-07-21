@@ -18,152 +18,152 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "bogazici-villa",
-    title: "Boğaziçi Villa",
-    location: "Sarıyer, İstanbul",
-    year: 2024,
-    category: "Konut",
-    shortDescription:
-      "Boğaz siluetine açılan, doğal taş ve cam yüzeylerin diyaloğuyla şekillenen çağdaş bir yaşam alanı.",
-    description: `Boğaziçi Villa projesi, Sarıyer'in yeşil dokusuna entegre edilmiş bir konut tasarımıdır. Yapı, arazinin doğal eğimini avantaja çevirerek katmanlanmış bir plan şemasıyla kurgulandı. Ana yaşam alanları güneye, Boğaz manzarasına yönlendirilirken, servis alanları kuzeyde topoğrafyayla bütünleştirildi.
-
-Cephe tasarımında yerel doğal taş ile geniş cam yüzeyler bir arada kullanılarak, iç-dış mekan sınırının belirsizleştirilmesi hedeflendi. Peyzaj düzenlemesi, mevcut bitki örtüsüne minimum müdahale ilkesiyle gerçekleştirildi.
-
-İç mekanda açık plan mutfak-yemek-oturma aksı, tavan yüksekliğinin 4.5 metreye ulaştığı çift ışıklı bir hacimle tanımlanır. Alt kottaki yatak odaları bahçeyle doğrudan ilişkilendirilirken, üst kottaki ana yatak odası panoramik Boğaz manzarasına açılır. Yerden ısıtma, doğal havalandırma ve güneş kırıcı sistemleriyle enerji verimliliği ön planda tutulmuştur.`,
-    area: "480 m²",
-    status: "Tamamlandı",
-    featured: true,
-    images: {
-      main: "/images/projects/bogazici-villa.png",
-      banner: "/images/projects/bogazici-villa-banner.png",
-      gallery: [
-        "/images/projects/bogazici-villa.png",
-        "/images/projects/bogazici-villa-2.png",
-      ],
-    },
-  },
-  {
-    slug: "kadikoy-ofis",
-    title: "Kadıköy Ofis Yapısı",
-    location: "Kadıköy, İstanbul",
-    year: 2023,
-    category: "Ticari",
-    shortDescription:
-      "Tarihi dokuya saygılı, esnek çalışma alanları sunan bir karma kullanımlı ofis projesi.",
-    description: `Kadıköy'ün tarihi merkezine yakın konumlanan bu ofis yapısı, çevresindeki kentsel dokuyla ölçek ve malzeme dilinde uyum sağlamayı hedefler. Bina, açık plan ofis katları, ortak çalışma alanları ve zemin katta kamusal erişime açık bir kafe-galeri mekanı barındırır.
-
-Cephedeki dikey ahşap lamel sistemi hem güneş kontrolü sağlar hem de sokak cephesine ritmik bir doku katar. İç mekanda açığa çıkarılmış beton, doğal ahşap ve endüstriyel detaylar, sade ama karakterli bir atmosfer oluşturur.
-
-Yapının çatı katında yeşil bir teras alanı tasarlanarak çalışanlara açık hava dinlenme imkanı sunulmuştur. Esnek bölme duvar sistemi sayesinde ofis katları, farklı kiracı ihtiyaçlarına göre yeniden düzenlenebilir. Bina genelinde enerji verimli aydınlatma, yağmur suyu geri kazanımı ve bisiklet park alanlarıyla sürdürülebilir bir çalışma ortamı hedeflenmiştir.`,
-    area: "1.200 m²",
-    status: "Tamamlandı",
-    featured: true,
-    images: {
-      main: "/images/projects/kadikoy-ofis.png",
-      banner: "/images/projects/kadikoy-ofis-banner.png",
-      gallery: [
-        "/images/projects/kadikoy-ofis.png",
-        "/images/projects/kadikoy-ofis-2.png",
-      ],
-    },
-  },
-  {
-    slug: "ulus-konut",
-    title: "Ulus Konut Projesi",
+    slug: "besiktas-daire-renovasyon",
+    title: "Beşiktaş Daire Renovasyonu",
     location: "Beşiktaş, İstanbul",
     year: 2024,
     category: "Konut",
     shortDescription:
-      "Kompakt bir parselde maksimum yaşam kalitesi sunan, ışık odaklı bir konut tasarımı.",
-    description: `Beşiktaş Ulus'ta dar ve derin bir parselde konumlanan bu konut projesi, sınırlı alanda yaşam kalitesini maksimize etme sorusuna yanıt arar. Tasarım, iç avlu ve ışıklık sistemleriyle her kata doğal ışık ulaştırırken, katlararası görsel bağlantılarla mekansal genişlik hissi yaratır.
+      "1970'lere ait bir apartman dairesinin, açık plan yaşam anlayışıyla yeniden düzenlendiği kapsamlı bir iç mekan yenileme projesi.",
+    description: `Beşiktaş'ın merkezi bir sokağında yer alan bu 3+1 daire, mevcut bölme duvarları kaldırılarak açık plan bir yaşam alanına dönüştürüldü. Mutfak, yemek ve oturma bölümleri tek bir akışkan hacim içinde yeniden kurgulandı.
 
-Malzeme paletinde beyaz sıva, doğal meşe ve mat siyah metal detaylar kullanıldı. Her dairenin en az bir yönde kente açılan geniş bir penceresi bulunur — bu, projenin temel tasarım ilkesidir.
+Orijinal ahşap döşeme, restorasyon sonrası korunarak yeniden kullanıma kazandırıldı. Tavan yüksekliğinin 3.10 metre olması, mekâna ferah bir atmosfer katarken, aydınlatma tasarımında gizli LED şeritler ve sarkıt armatürler tercih edildi.
 
-Ortak alanlarda minimalist bir tasarım dili benimsenmiş, giriş holü ve merdiven boşluğu zenithal bir ışıklıkla aydınlatılmıştır. Dairelerin iç düzeninde gizli depolama çözümleri ve entegre mobilya sistemleri kullanılarak kompakt alanlarda ferah bir yaşam deneyimi sağlanmıştır. Çatı katında sakinlere özel bir teras bahçesi, kentin panoramik manzarasıyla buluşma noktası olarak tasarlanmıştır.`,
-    area: "320 m²",
+Banyo ve mutfak tamamen yenilendi. Mutfakta mat siyah dolaplar ve meşe tezgah kombinasyonu kullanılırken, banyoda mikro çimento duvar kaplaması ve yürüyüşlü duş alanı tasarlandı. Isıtma sistemi kombi ile yerden ısıtmaya çevrildi.`,
+    area: "125 m²",
     status: "Tamamlandı",
     featured: true,
     images: {
-      main: "/images/projects/ulus-konut.png",
-      banner: "/images/projects/ulus-konut-banner.png",
+      main: "/images/projects/besiktas-daire-1.jpg",
+      banner: "/images/projects/besiktas-daire-banner.jpg",
       gallery: [
-        "/images/projects/ulus-konut.png",
-        "/images/projects/ulus-konut-2.png",
+        "/images/projects/besiktas-daire-1.jpg",
+        "/images/projects/besiktas-daire-2.jpg",
       ],
     },
   },
   {
-    slug: "princes-ada-evi",
-    title: "Prens Adası Yazlık Evi",
+    slug: "kadikoy-kafe-tasarim",
+    title: "Kadıköy Kafe İç Mekan Tasarımı",
+    location: "Kadıköy, İstanbul",
+    year: 2023,
+    category: "Ticari",
+    shortDescription:
+      "Moda sahiline yakın bir sokakta, eski bir zemin kat dükkânının butik kafeye dönüştürülme projesi.",
+    description: `Kadıköy Moda'da dar ve uzun bir zemin kat mekânı, müşteri akışını optimize eden bir iç mekan düzenlemesiyle butik kafeye dönüştürüldü. Giriş bölümündeki sipariş tezgahı, ortadaki oturma alanı ve arka bahçeye açılan cam kapılar mekânı üç kademeye ayırır.
+
+Mevcut taş duvarlar temizlenerek açığa çıkarıldı ve endüstriyel tarzda metal raf sistemleriyle tamamlandı. Tezgah alanında beyaz mermer ve mat pirinç detaylar kullanılarak sıcak ama modern bir atmosfer yaratıldı.
+
+Aydınlatma tasarımında farklı bölgelere özel senaryolar geliştirildi: tezgah üstünde sarkıt armatürler, oturma alanında duvar aplikleri, bahçe geçişinde ise ip aydınlatma. Mekanın toplam alanı küçük olmasına rağmen, ayna kullanımı ve açık renk paleti sayesinde geniş bir algı oluşturuldu.`,
+    area: "65 m²",
+    status: "Tamamlandı",
+    featured: true,
+    images: {
+      main: "/images/projects/kadikoy-kafe-1.jpg",
+      banner: "/images/projects/kadikoy-kafe-banner.jpg",
+      gallery: [
+        "/images/projects/kadikoy-kafe-1.jpg",
+        "/images/projects/kadikoy-kafe-2.jpg",
+      ],
+    },
+  },
+  {
+    slug: "ulus-dublex-daire",
+    title: "Ulus Dubleks Daire",
+    location: "Beşiktaş, İstanbul",
+    year: 2024,
+    category: "Konut",
+    shortDescription:
+      "Mevcut bir binanın çatı katına eklenen dubleks dairenin, şehir manzarasını yaşam alanına taşıyan tasarımı.",
+    description: `Beşiktaş Ulus'ta mevcut bir apartmanın çatı katına yapılan ek ile oluşturulan bu dubleks daire, alt katta yaşam alanları, üst katta ise yatak odaları ve küçük bir çalışma nişi barındırır.
+
+Alt kattaki açık plan salon-mutfak, güneybatıya bakan geniş bir pencereyle kent siluetine açılır. İç merdiven çelik-ahşap konstrüksiyon olarak tasarlandı ve mekânda hafif bir endüstriyel vurgu oluşturur.
+
+Üst katta çatı eğimine uygun alçak tavanlı alanlar, gömme dolap ve özel tasarım yatak başlığı ile değerlendirildi. Teras alanı, ahşap deck ve çelik korkuluk ile düzenlenerek dış mekan oturma alanına dönüştürüldü. Tüm doğrama ve yalıtım sistemi sıfırdan yapıldı.`,
+    area: "95 m²",
+    status: "Tamamlandı",
+    featured: true,
+    images: {
+      main: "/images/projects/ulus-dublex-1.jpg",
+      banner: "/images/projects/ulus-dublex-banner.jpg",
+      gallery: [
+        "/images/projects/ulus-dublex-1.jpg",
+        "/images/projects/ulus-dublex-2.jpg",
+      ],
+    },
+  },
+  {
+    slug: "buyukada-yazlik",
+    title: "Büyükada Bahçeli Ev Restorasyonu",
     location: "Büyükada, İstanbul",
     year: 2022,
     category: "Konut",
     shortDescription:
-      "Ada mimarisinin geleneksel ölçeğini çağdaş bir dille yeniden yorumlayan ahşap bir yazlık konut.",
-    description: `Büyükada'nın karakteristik ahşap yapı geleneğinden ilham alan bu yazlık ev, geleneksel ölçek ve oranları modern bir plan şemasıyla birleştirir. Geniş verandalar, yüksek tavanlar ve çapraz havalandırma sistemiyle doğal iklimlendirme ön planda tutuldu.
+      "Ada mimarisine uygun bir ahşap evin, özgün karakteri korunarak yapılan onarım ve yenileme çalışması.",
+    description: `Büyükada'da 1930'lara ait ahşap bir evin, yapısal güçlendirme ve iç mekan yenileme projesidir. Cephedeki ahşap lambri, çürüyen bölümleri değiştirilerek özgün renginde yeniden boyandı. Pencere doğramaları, orijinal ölçülerinde ahşap olarak yenilendi.
 
-Yapının ahşap taşıyıcı sistemi yerel ustalarla birlikte detaylandırıldı. Cephedeki panjur sistemi hem mahremiyet hem de güneş kontrolü sağlarken, adanın yeşil dokusuna karışan bir siluet oluşturur.
+İç mekanda mutfak ve banyo tamamen modernize edilirken, salon ve yatak odalarındaki orijinal ahşap döşeme ve tavan kaplamaları korundu. Mutfakta ada tipi tezgah, doğal taş zemin ve açık raf sistemi tercih edildi.
 
-Bahçe düzenlemesinde adanın endemik bitki türleri tercih edilerek doğal peyzajla uyum sağlanmıştır. Zemin katta deniz manzarasına açılan geniş bir salon ve açık mutfak yer alırken, üst katta yatak odaları çam ağaçlarının arasından süzülen ışıkla aydınlanır. Yaz aylarında doğal havalandırmanın yeterli olduğu yapıda, kışın ise şömine ve yerden ısıtma sistemiyle konforlu bir yaşam ortamı sunulmaktadır.`,
-    area: "260 m²",
+Bahçede mevcut meyve ağaçları korunarak küçük bir oturma terası ve taş yürüyüş yolu eklendi. Evin ısıtma sistemi soba ve şömine kombinasyonundan kombi sistemine geçirildi. Elektrik ve su tesisatı tamamen yenilendi.`,
+    area: "110 m²",
     status: "Tamamlandı",
     featured: false,
     images: {
-      main: "/images/projects/princes-ada.png",
-      banner: "/images/projects/princes-ada-banner.png",
+      main: "/images/projects/buyukada-ev-1.jpg",
+      banner: "/images/projects/buyukada-ev-banner.jpg",
       gallery: [
-        "/images/projects/princes-ada.png",
-        "/images/projects/princes-ada-2.png",
+        "/images/projects/buyukada-ev-1.jpg",
+        "/images/projects/buyukada-ev-2.jpg",
       ],
     },
   },
   {
-    slug: "nisantasi-galeri",
-    title: "Nişantaşı Galeri Dönüşümü",
+    slug: "nisantasi-showroom",
+    title: "Nişantaşı Mağaza Tasarımı",
     location: "Şişli, İstanbul",
     year: 2023,
-    category: "Kültürel",
+    category: "Ticari",
     shortDescription:
-      "1960'ların bir apartman katını çağdaş sanat galerisine dönüştüren minimal bir iç mekan projesi.",
-    description: `Nişantaşı'nda 1960'lara ait bir apartmanın ikinci katının çağdaş sanat galerisine dönüştürülmesi projesinde, mevcut yapının kemik yapısı korunarak iç mekan tamamen yeniden kurgulandı. Orijinal tavan yüksekliğinin sağladığı avantajla, esnek sergileme duvarları ve doğal ışık kuyuları tasarlandı.
+      "Bir giyim markası için, vitrin düzeninden ürün sergileme sistemine kadar bütüncül iç mekan tasarımı.",
+    description: `Nişantaşı'nın ana caddelerinden birinde yer alan zemin kat ticari alanın, yerel bir giyim markası için showroom'a dönüştürülme projesidir. Mekân, vitrin bölümü, sergileme alanı ve arka depo-kabini olarak üç fonksiyonel bölgeye ayrıldı.
 
-Zemin, dökme beton; duvarlar, beyaz alçı sıva; tavan ise açığa çıkarılmış orijinal beton kasettir. Bu üç yüzey bir araya geldiğinde, sanat eserlerinin ön plana çıktığı nötr ama atmosferik bir mekan ortaya çıkar.
+Vitrin tasarımında minimal bir yaklaşım benimsenerek, manken yerine asılı ürün sergileme sistemi ve spot aydınlatma kullanıldı. İç mekandaki sergileme duvarları modüler olarak tasarlandı; sezon değişimlerinde kolayca yeniden düzenlenebilir.
 
-Aydınlatma tasarımı, galeri mekanının en kritik unsurlarından biri olarak ele alınmıştır. Ray tipi LED armatürler eserlere odaklanmış spot aydınlatma sağlarken, tavan ışık kuyularından süzülen doğal gün ışığı mekana canlı bir atmosfer katar. Giriş bölümünde küçük bir kafe köşesi ve sanat kitapları bölümü, ziyaretçi deneyimini zenginleştiren tamamlayıcı unsurlar olarak tasarlanmıştır.`,
-    area: "180 m²",
+Zemin kaplama olarak açık tonlu meşe görünümlü laminat, tavan ise mat siyah boya ile tamamlandı. Deneme kabinleri, keten perde ve pirinç askı detaylarıyla markanın doğal estetiğini yansıtır. Aydınlatma planı, ürünlerin rengini doğru yansıtacak CRI değeri yüksek LED armatürlerle oluşturuldu.`,
+    area: "80 m²",
     status: "Tamamlandı",
     featured: false,
     images: {
-      main: "/images/projects/nisantasi-galeri.png",
-      banner: "/images/projects/nisantasi-galeri-banner.png",
+      main: "/images/projects/nisantasi-magaza-1.jpg",
+      banner: "/images/projects/nisantasi-magaza-banner.jpg",
       gallery: [
-        "/images/projects/nisantasi-galeri.png",
-        "/images/projects/nisantasi-galeri-2.png",
+        "/images/projects/nisantasi-magaza-1.jpg",
+        "/images/projects/nisantasi-magaza-2.jpg",
       ],
     },
   },
   {
-    slug: "tarabya-residence",
-    title: "Tarabya Residence",
-    location: "Sarıyer, İstanbul",
+    slug: "cihangir-studyo",
+    title: "Cihangir Stüdyo Daire",
+    location: "Beyoğlu, İstanbul",
     year: 2025,
     category: "Konut",
     shortDescription:
-      "Deniz seviyesinden yükselen, sürdürülebilir malzemelerle tasarlanmış bir kıyı konut projesi.",
-    description: `Tarabya sahilinde konumlanan bu residence projesi, denizle ilişkiyi her kattan yaşatmayı hedefler. Yapının kademeli kütle organizasyonu, her daireye kesintisiz bir deniz görüşü ve geniş bir teras alanı sağlar.
+      "Küçük bir stüdyo dairenin, akıllı depolama çözümleri ve çok fonksiyonlu mobilyalarla yeniden tasarımı.",
+    description: `Cihangir'de 42 metrekarelik bir stüdyo dairenin, tek kişilik yaşam için optimize edilmiş iç mekan projesidir. Sınırlı alanda yatak, çalışma masası, mutfak ve oturma alanı bir arada, birbirini engellemeden çalışacak şekilde kurgulandı.
 
-Sürdürülebilirlik projenin temel ilkelerinden biridir: yağmur suyu toplama, pasif güneş kontrolü ve yerel malzeme kullanımı tasarımın ayrılmaz parçalarıdır. Cephede kullanılan geri dönüştürülmüş ahşap kompozit paneller hem estetik hem de çevresel sorumluluk taşır.
+Yatak alanı, yükseltilmiş bir platform üzerine yerleştirilerek altında geniş çekmeceli depolama alanı oluşturuldu. Mutfak tezgahı aynı zamanda yemek masası olarak kullanılabilecek şekilde uzatıldı ve altına iki bar taburesi yerleştirildi.
 
-Zemin katta sakinlere özel bir yüzme havuzu, fitness merkezi ve sosyal tesis alanı yer almaktadır. Yeraltı otoparkı, akıllı ev otomasyon sistemleri ve 24 saat güvenlik hizmeti projenin sunduğu yaşam kalitesinin tamamlayıcı unsurlarıdır. Peyzaj tasarımında Akdeniz bitkileri ve su öğeleri kullanılarak, sahil yaşamının ruhunu yansıtan huzurlu bir ortam yaratılmıştır.`,
-    area: "2.400 m²",
+Duvar boyunca uzanan gömme dolap sistemi, giriş gardırobu, kitaplık ve TV ünitesini tek bir modül içinde birleştirir. Renk paletinde beyaz, açık meşe ve pastel yeşil tonları tercih edilerek küçük alana ferah bir atmosfer kazandırıldı. Banyo, duşakabin ve asma lavabo ile kompakt ama işlevsel tutuldu.`,
+    area: "42 m²",
     status: "Devam Ediyor",
     featured: false,
     images: {
-      main: "/images/projects/tarabya-residence.png",
-      banner: "/images/projects/tarabya-residence-banner.png",
+      main: "/images/projects/cihangir-studyo-1.jpg",
+      banner: "/images/projects/cihangir-studyo-banner.jpg",
       gallery: [
-        "/images/projects/tarabya-residence.png",
-        "/images/projects/tarabya-residence-2.png",
+        "/images/projects/cihangir-studyo-1.jpg",
+        "/images/projects/cihangir-studyo-2.jpg",
       ],
     },
   },
