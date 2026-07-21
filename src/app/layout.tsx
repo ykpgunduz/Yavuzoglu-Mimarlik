@@ -103,8 +103,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   verification: {
-    // Google Search Console doğrulama kodu eklenecekse:
-    // google: "doğrulama-kodu",
+    google: "Q3w3O2NZoORSu_mSAsq-WeErqukCgmZZdWRm9rQnW9c",
   },
 };
 
